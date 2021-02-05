@@ -13,10 +13,11 @@ Based on the similarity between the new products in the store, and the items tha
 
 System description
 we simulate a woman's fashion shop with the following category for recommendation:
-1-Skirts
-2-Dresses
-3-Shorts 
-4-Blouses 
+
+  1-Skirts
+  2-Dresses
+  3-Shorts 
+  4-Blouses 
 
 • we load the pre-train ResNet model with weights from  ImageNet  
 • transfer learning,  we freeze all layer except the last 4 
