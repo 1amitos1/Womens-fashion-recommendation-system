@@ -5,8 +5,8 @@
 ---
 * [Project highlights](#Project-highlights)
 * [Introduction](#Introduction)
-* [System description](#System description)
-* [Recommendation process](#MRecommendation process)
+* [System description](#System-description)
+* [Recommendation process](#MRecommendation-process)
 * [Model training && Evaluation](#Model-training-&&-Evaluation)
 * [Input-Output examples](#Input-Output-examples)
 * [Reference](#Reference)
@@ -60,16 +60,49 @@ we simulate a woman's fashion shop with the following category for recommendatio
 
 
 ## Model training && Evaluation
----
-Attempt | #1 | #2 | #3 | #4 
---- | --- | --- | --- |--- |
-Seconds | 301 | 283 | 290 |120
 
-source	Train	Val	Test
-Skirts	493	209	160
-Dresses	1829	638	545
-Shorts	847	373	267
-Blouses	2063	694	694
+Categories | Train | Val | Test 
+--- | --- | --- | --- | 
+Skirts | 493 | 209 | 160 
+Dresses | 1829 | 638 | 545 
+Shorts | 847 | 373 | 267 
+Blouses | 2063 | 694 | 694 
+                                                                            
+
+
+
+
+
+
+
+
+
+Optimization algorithm |	Adam
+--- | --- | 
+learning rate |	0.01
+epsilon |	1e-07
+beta 1 |	0.9
+beta 2 |	0.999
+batch size |	6
+Number of workers |	6
+Number of epochs	| 4
+GPU |	1x Titan RTX
+
+
+
+
+
+
+Category|F1-score |Recall|Precision
+--- | --- | --- | --- | 
+B=Blouses|0.817|	0.781|	0.856|
+D=Dresses|0.775	|0.775	|0.774
+SH=Short|0.602|	0.655|	0.780
+SK=Skirt|0.602|	0.796|	0.484
+Accuracy|0.760|				|
+
+
+
 
 
 ## Input-Output examples
