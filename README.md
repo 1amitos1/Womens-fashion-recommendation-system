@@ -61,6 +61,16 @@ we simulate a woman's fashion shop with the following category for recommendatio
 
 ## Model training && Evaluation
 ---
+Attempt | #1 | #2 | #3 | #4 
+--- | --- | --- | --- |--- |
+Seconds | 301 | 283 | 290 |120
+
+source	Train	Val	Test
+Skirts	493	209	160
+Dresses	1829	638	545
+Shorts	847	373	267
+Blouses	2063	694	694
+
 
 ## Input-Output examples
 ---
