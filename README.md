@@ -50,33 +50,22 @@ we simulate a woman's fashion shop with the following category for recommendatio
 
 ## Recommendation process
 ---
-•To simulate user data for the recommendation, we toke from (https://www.kaggle.com/nicapotato/womens-ecommerce-clothing-reviews/home)
- the recommendation step works as follow:
-    given a user data
+To simulate user data for the recommendation, we toke from (https://www.kaggle.com/nicapotato/womens-ecommerce-clothing-reviews/home)
+ the recommendation step  given a user data works as follow:
     - Search for the most favorite items the user rate
     - Fashion shops get the category and create image embeddings on all the new items the store has to offer in that category.
     - create inventory in this category by using __AnnoyIndex__ 
     - Find the most similar items in the fashion shop that match the user's favorite item. 	
 
+![Recommendation architecture](https://user-images.githubusercontent.com/34807427/117280959-d00a4600-ae6b-11eb-9e2d-4fd2609762f2.png)
+
 
 ## Model training && Evaluation
-
-Categories | Train | Val | Test 
---- | --- | --- | --- | 
-Skirts | 493 | 209 | 160 
-Dresses | 1829 | 638 | 545 
-Shorts | 847 | 373 | 267 
-Blouses | 2063 | 694 | 694 
-                                                                            
-
-
-
-
-
-
-
-
-
+---
+<table>
+<tr><th>Hyperparameter </th><th>DataSet</th></tr>
+<tr><td>
+  
 Optimization algorithm |	Adam
 --- | --- | 
 learning rate |	0.01
@@ -88,12 +77,20 @@ Number of workers |	6
 Number of epochs	| 4
 GPU |	1x Titan RTX
 
+</td><td>
 
+Categories | Train | Val | Test 
+--- | --- | --- | --- | 
+Skirts | 493 | 209 | 160 
+Dresses | 1829 | 638 | 545 
+Shorts | 847 | 373 | 267 
+Blouses | 2063 | 694 | 694 
 
+</td></tr> </table>
 
+#### Result
 
-
-Category|F1-score |Recall|Precision
+|Category|F1-score |Recall|Precision
 --- | --- | --- | --- | 
 B=Blouses|0.817|	0.781|	0.856|
 D=Dresses|0.775	|0.775	|0.774
@@ -102,11 +99,23 @@ SK=Skirt|0.602|	0.796|	0.484
 Accuracy|0.760|				|
 
 
-
-
-
 ## Input-Output examples
 ---
+ ### Select the items that received the highest rating by user-A in the Dresses category
+  ![1](https://user-images.githubusercontent.com/34807427/117297570-0dc49a00-ae7f-11eb-8b98-131813fe1aa7.png)
+  
+  
+### The items that received the highest rating by user-A in the Dresses category
+  ![2](https://user-images.githubusercontent.com/34807427/117297567-0d2c0380-ae7f-11eb-9246-38492eb5a989.png)
+  
+  
+### System recommendation for user A in the Dresses category
+  ![reco_1_dresess](https://user-images.githubusercontent.com/34807427/117298103-a3f8c000-ae7f-11eb-9c19-d920206029e6.png)
 
 ## Reference
 ---
+- renttherunway (https://www.renttherunway.com/)
+- Women’s E-Commerce Clothing (https://lionbridge.ai/datasets/24-best-ecommerce-retail-datasets-for-machine-learning/)
+- Women's fashion store (https://www.kaggle.com/nicapotato/womens)
+
+
