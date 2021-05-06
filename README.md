@@ -58,12 +58,13 @@ we simulate a woman's fashion shop with the following category for recommendatio
 
 ## Recommendation process
 ---
-To simulate user data for the recommendation, we toke from (https://www.kaggle.com/nicapotato/womens-ecommerce-clothing-reviews/home)
- the recommendation step  given a user data works as follow:
-    - Search for the most favorite items the user rate
-    - Fashion shops get the category and create image embeddings on all the new items the store has to offer in that category.
-    - create inventory in this category by using __AnnoyIndex__ 
-    - Find the most similar items in the fashion shop that match the user's favorite item. 	
+To simulate user data for the recommendation, we toke from [womens-ecommerce](https://www.kaggle.com/nicapotato/womens-ecommerce-clothing-reviews/home)
+
+#### the recommendation step  given a user data works as follow:
+- Search for the most favorite items the user rate
+- Fashion shops get the category and create image embeddings on all the new items the store has to offer in that category.
+- create inventory in this category by using __AnnoyIndex__ 
+- Find the most similar items in the fashion shop that match the user's favorite item. 	
 
 ![Recommendation architecture](https://user-images.githubusercontent.com/34807427/117280959-d00a4600-ae6b-11eb-9e2d-4fd2609762f2.png)
 
