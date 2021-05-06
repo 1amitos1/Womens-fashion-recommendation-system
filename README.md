@@ -16,6 +16,7 @@ This project is our final project in the recommendation systems course
 * [Recommendation process](#MRecommendation-process)
 * [Model training && Evaluation](#Model-training-&&-Evaluation)
 * [Input-Output examples](#Input-Output-examples)
+* [Downloads](#Downloads)
 * [Reference](#Reference)
 
 
@@ -118,6 +119,14 @@ Accuracy|0.760|				|
   
 ### System recommendation for user A in the Dresses category
   ![reco_1_dresess](https://user-images.githubusercontent.com/34807427/117298103-a3f8c000-ae7f-11eb-9c19-d920206029e6.png)
+  
+
+
+## Downloads  
+---
+- Download our model + weights from
+  (https://drive.google.com/file/d/1CASXfsWJFhOwv3bjyv-8UxwciO0IkrCB/view?usp=sharing)
+
 
 ## Reference
 ---
