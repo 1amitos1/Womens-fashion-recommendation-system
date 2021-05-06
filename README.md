@@ -1,6 +1,13 @@
 
 # Womens-fashion-recommendation-system
 ---
+This project is our final project in the recommendation systems course
+
+#### Project creators
+- Amit Hayun [amitos684@gmail.com](amitos684@gmail.com)
+- Bar Loupo [barloupo@gmail.com](barloupo@gmail.com)
+
+                    
 ## Table of contents
 ---
 * [Project highlights](#Project-highlights)
